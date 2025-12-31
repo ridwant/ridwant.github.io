@@ -1,0 +1,319 @@
+/* Minimalist Researcher Theme */
+:root {
+    --primary-color: #333;
+    --accent-color: #C60C30;
+    /* University Red or similar academic accent */
+    --link-color: #0066cc;
+    --bg-color: #ffffff;
+    --text-color: #222;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --max-width: 900px;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    /* Slight transparency */
+    z-index: 1000;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    /* Reduced padding for compact look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center vertically */
+    flex-wrap: nowrap;
+    /* Prevent wrapping if possible */
+}
+
+/* Header Social Icons (Left side) */
+.header-social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.header-social-icons a {
+    color: var(--primary-color);
+}
+
+.header-social-icons a:hover {
+    color: var(--accent-color);
+}
+
+/* Navigation (Right side) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #555;
+    font-weight: 500;
+    font-size: 0.95rem;
+    /* Slightly smaller for nav links */
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+    /* Clean hover */
+}
+
+/* Main Name/Title (Moved to Body) */
+.main-title-block {
+    margin-bottom: 3rem;
+}
+
+.main-title-block h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+.main-title-block span {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Key Sections */
+section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 80px;
+    /* Offset for sticky header */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Bio Section */
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    /* Text left, Image right */
+    gap: 2rem;
+    align-items: start;
+}
+
+.profile-pic {
+    width: 100%;
+    /* aspect-ratio: 1 / 1; */
+    /* Enforce square aspect ratio */
+    object-fit: cover;
+    /* padding-right: 1rem; */
+    /* Crop image to fit */
+    /* border-radius: 50%; */
+    /* border: 3px solid #eee; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+
+/* News List */
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.date {
+    font-weight: bold;
+    min-width: 100px;
+    color: #666;
+}
+
+/* Research/Publications */
+/* Research/Publications */
+.publication-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    align-items: flex-start;
+}
+
+.pub-tag {
+    background-color: #e67e22;
+    /* Warning/Orange color for ICRA, or customize */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    min-width: 50px;
+    text-align: center;
+    margin-top: 4px;
+    /* Align with title baseline */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pub-tag.icra {
+    background-color: #c0392b;
+    /* Dark Red */
+}
+
+.pub-tag.iros {
+    background-color: #2980b9;
+    /* Blue */
+}
+
+.pub-content {
+    flex: 1;
+}
+
+.pub-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 0 0.4rem 0;
+    line-height: 1.4;
+}
+
+.pub-title a {
+    color: var(--primary-color);
+}
+
+.pub-authors {
+    margin-bottom: 0.4rem;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.pub-venue {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+}
+
+.pub-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.pub-btn {
+    border: 1px solid #444;
+    color: #444;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    background: transparent;
+}
+
+.pub-btn:hover {
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    margin-left: 1rem;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        width: 150px;
+        margin: 0 auto 1.5rem auto;
+        display: block;
+        order: -1;
+        /* Image on top on mobile */
+    }
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .publication-item {
+        flex-direction: column;
+    }
+
+    .pub-thumb {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* BibTeX Section */
+.bibtex-container {
+    display: none;
+    /* Hidden by default */
+    background-color: #f6f8fa;
+    border: 1px solid #eaecef;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 12px;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-size: 85%;
+    line-height: 1.45;
+    overflow: auto;
+    white-space: pre-wrap;
+    color: #24292e;
+    box-shadow: none;
+}
