@@ -1,14 +1,25 @@
 /* Minimalist Researcher Theme */
 :root {
-    --primary-color: #333;
-    --accent-color: #C60C30;
-    /* University Red or similar academic accent */
-    --link-color: #0066cc;
-    --bg-color: #ffffff;
-    --text-color: #222;
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #111827;
+    /* Slate Navy (Headings) */
+    --secondary-color: #374151;
+    /* Academic Blue (Links/Highlights) */
+    --accent-color: #4F46E5;
+    /* Soft Green (Subtle emphasis) */
+    --bg-color: #FFFFFF;
+    /* White Background */
+    --section-bg: #F8FAFC;
+    /* Light Gray Section Background */
+    --text-color: #111827;
+    /* Slate Navy Main Text */
+    --muted-color: #475569;
+    /* Slate Gray Muted Text */
+    --link-color: var(--secondary-color);
+    --font-main: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --max-width: 900px;
 }
+
+
 
 body {
     font-family: var(--font-main);
@@ -25,6 +36,7 @@ a {
 }
 
 a:hover {
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -155,38 +167,53 @@ h2 {
 }
 
 .news-list li {
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    /* Fixed date column, flexible content */
+    gap: 1.5rem;
     margin-bottom: 1rem;
+    align-items: baseline;
 }
 
 .date {
-    font-weight: bold;
-    min-width: 100px;
-    color: #666;
+    font-weight: 600;
+    color: var(--muted-color);
 }
 
 /* Research/Publications */
 /* Research/Publications */
 .publication-item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    /* Match News alignment */
     gap: 1.5rem;
-    margin-bottom: 2.5rem;
-    align-items: flex-start;
+    margin-bottom: 2rem;
+    /* Reduced from 2.5rem for consistency */
+    align-items: start;
 }
 
+.pub-logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    /* Remove inline spacing */
+}
+
+/* 
+.pub-tag { ... } 
+Keeping pub-tag styles just in case, but they are currently unused for ICRA items. 
+*/
 .pub-tag {
-    background-color: #e67e22;
-    /* Warning/Orange color for ICRA, or customize */
+    background-color: var(--accent-color);
     color: white;
     padding: 4px 8px;
     border-radius: 4px;
     font-weight: bold;
     font-size: 0.75rem;
     text-transform: uppercase;
-    min-width: 50px;
-    text-align: center;
-    margin-top: 4px;
+    width: fit-content;
+    /* Ensure it doesn't stretch */
     /* Align with title baseline */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -222,9 +249,16 @@ h2 {
     font-size: 0.95rem;
 }
 
+.pub-summary {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
 .pub-venue {
     font-style: italic;
-    color: #666;
+    color: var(--muted-color);
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
 }

@@ -4,12 +4,18 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<title>Md Ridwan Hossain Talukder | Robotics Researcher</title>
+	<title>Ridwan Talukder | Robotics Researcher</title>
 	<meta name="description"
 		content="Personal website of Md Ridwan Hossain Talukder, PhD Graduate Student in Robotics." />
+	<!-- Google Fonts: Inter -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/minimal.css" />
 	<!-- Font Awesome for Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
@@ -43,7 +49,9 @@
 		<!-- Main Title Block (Moved from Header) -->
 		<div class="main-title-block">
 			<h1>Ridwan Talukder</h1>
-			<span style="color: #666;">Graduate Research Assistant @ George Mason University</span>
+			<!-- <span style="color: #666;">Graduate Research Assistant @ George Mason University</span> -->
+			<span><strong>PhD Student & Graduate Research Assistant</strong> — Robotics, Machine Learning, and Planning
+				under Uncertainty</span>
 		</div>
 
 		<!-- About / Bio Section -->
@@ -59,10 +67,13 @@
 						advised by <a href="https://gjstein.com/">Prof. Gregory Stein</a>.
 					</p>
 					<p>
-						My research lies at the intersection of <strong>robotics, machine learning, and planning under
-							uncertainty</strong>.
-						I aim to develop algorithms that enable robots to reason about the future and perform
-						long-horizon tasks efficiently, even with incomplete or noisy information.
+						My research focuses on <strong>anticipatory task and motion planning for long-lived service
+							robots</strong>
+						operating in large-scale home environments. I develop learning-augmented planning methods that
+						enable
+						robots to reason about future tasks, proactively prepare their environment, and execute
+						long-horizon
+						behaviors efficiently under uncertainty.
 					</p>
 					<p>
 						Prior to my PhD, I worked as a Software Engineer and Founder in the tech industry. I hold an MS
@@ -86,9 +97,10 @@
 			<ul class="news-list">
 				<li>
 					<span class="date">Mar 2025</span>
-					<span>Our paper <strong>"Anticipatory planning for performant long-lived robot in large-scale
-							home-like
-							environments"</strong> accepted to
+					<span>Our paper <strong><a href="https://arxiv.org/abs/2411.12837">"Anticipatory planning for
+								performant long-lived robot in large-scale
+								home-like
+								environments"</a></strong> accepted to
 						<strong>ICRA 2025</strong>!</span>
 				</li>
 				<li>
@@ -112,8 +124,9 @@
 				</li>
 				<li>
 					<span class="date">Mar 2023</span>
-					<span>Our paper <strong>"Anticipatory planning: Improving long-lived planning by estimating expected
-							cost of future tasks"</strong> accepted to
+					<span>Our paper <strong><a href="https://arxiv.org/abs/2305.04692">"Anticipatory planning: Improving
+								long-lived planning by estimating expected
+								cost of future tasks"</a></strong> accepted to
 						<strong>ICRA 2023</strong>!</span>
 				</li>
 				<li>
@@ -129,7 +142,7 @@
 
 			<!-- Paper 1 -->
 			<div class="publication-item">
-				<div class="pub-tag icra">ICRA</div>
+				<img src="images/icra_logo.png" alt="ICRA" class="pub-logo">
 				<div class="pub-content">
 					<div class="pub-title">
 						<a href="https://arxiv.org/abs/2411.12837">Anticipatory planning for performant long-lived robot
@@ -137,6 +150,12 @@
 					</div>
 					<div class="pub-authors">
 						<strong>Md Ridwan Hossain Talukder</strong>, Raihan Islam Arnob, Gregory J Stein
+					</div>
+					<div class="pub-summary">
+						This research presents a model-based anticipatory task planning framework designed for
+						large-scale environments like homes and restaurants. By integrating Graph Neural Networks and 3D
+						Scene Graphs to estimate future costs, the system significantly improves long-term efficiency by
+						allowing robots to prepare for subsequent tasks.
 					</div>
 					<div class="pub-venue">
 						International Conference on Robotics and Automation (ICRA), 2025
@@ -152,7 +171,7 @@
 
 			<!-- Paper 2 -->
 			<div class="publication-item">
-				<div class="pub-tag icra">ICRA</div>
+				<img src="images/icra_logo.png" alt="ICRA" class="pub-logo">
 				<div class="pub-content">
 					<div class="pub-title">
 						<a href="https://arxiv.org/abs/2305.04692">Anticipatory planning: Improving long-lived planning
@@ -160,6 +179,12 @@
 					</div>
 					<div class="pub-authors">
 						Roshan Dhakal, <strong>Md Ridwan Hossain Talukder</strong>, Gregory J Stein
+					</div>
+					<div class="pub-summary">
+						This paper introduces an anticipatory planning method that leverages Graph Neural Networks to
+						predict the long-term impact of a robot's current actions on future tasks. Tested in a
+						blockworld setting, the approach promotes organizational behaviors that reduce overall execution
+						costs compared to traditional, myopic planning.
 					</div>
 					<div class="pub-venue">
 						International Conference on Robotics and Automation (ICRA), 2023
@@ -184,20 +209,25 @@
 					<span><strong>Graduate Research Assistant</strong>, George Mason University (RAIL Group)</span>
 				</li>
 				<li>
-					<span class="date">2021 - Present</span>
+					<span class="date">2021 - 2024</span>
 					<span><strong>Graduate Teaching Assistant</strong>, George Mason University</span>
 				</li>
 				<li>
 					<span class="date">2021 - 2022</span>
-					<span><strong>NSF Research Trainee</strong>, CASBBI</span>
+					<span><strong>NSF Research Trainee</strong>, Center for Advancing Systems Science and Bioengineering
+						Innovation (CASSBI)</span>
 				</li>
 				<li>
-					<span class="date">2020 - 2022</span>
-					<span><strong>Founder</strong>, Khelo.io (Dhaka)</span>
+					<span class="date">2020 - 2021</span>
+					<span><strong>Founder</strong>, Khelo.io</span>
 				</li>
 				<li>
 					<span class="date">2018 - 2020</span>
-					<span><strong>Software Engineer</strong>, Workd.Ai</span>
+					<span><strong>Software Engineer</strong>, Workd</span>
+				</li>
+				<li>
+					<span class="date">2017 - 2018</span>
+					<span><strong>Software Engineer</strong>, IPVision Canada Inc.</span>
 				</li>
 			</ul>
 		</section>
@@ -205,7 +235,7 @@
 		<!-- Footer -->
 		<footer>
 			<div class="copyright">
-				&copy; 2025 Md Ridwan Hossain Talukder
+				&copy; 2025 Ridwan Talukder
 			</div>
 			<div class="social-icons">
 				<a href="https://scholar.google.com/" title="Google Scholar"><i
