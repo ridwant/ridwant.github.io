@@ -6,251 +6,283 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<title>Ridwan Talukder | Robotics Researcher</title>
 	<meta name="description"
-		content="Personal website of Md Ridwan Hossain Talukder, PhD Graduate Student in Robotics." />
-	<!-- Google Fonts: Inter -->
+		content="Personal website of Md Ridwan Hossain Talukder, PhD Graduate Student in Robotics at George Mason University. Research in anticipatory task and motion planning." />
+	<link rel="canonical" href="https://ridwant.github.io/" />
+	<!-- Google Fonts: Open Sans -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/minimal.css" />
 	<!-- Font Awesome for Icons -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 </head>
 
 <body>
 
-	<div class="container">
-
-		<!-- Sticky Header -->
-		<header>
-			<!-- Left: Social Icons -->
-			<div class="header-social-icons">
-				<a href="mailto:mtalukd@gmu.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
-				<a href="https://scholar.google.com/citations?user=iDFSaL4AAAAJ&hl=en" title="Google Scholar"><i
-						class="fa-solid fa-graduation-cap"></i></a>
-				<a href="https://github.com/ridwant" title="GitHub"><i class="fa-brands fa-github"></i></a>
-				<a href="https://x.com/Aakkhar" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-				<!-- <a href="https://facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a> -->
+	<!-- ===== HEADER ===== -->
+	<header class="site-header">
+		<div class="header-inner">
+			<div class="header-name">
+				<a href="#">Ridwan Talukder</a>
 			</div>
-
-			<!-- Right: Navigation -->
-			<nav>
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#publications">Publications</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="assets/pdf/cv.pdf">CV</a></li>
-				</ul>
+			<nav class="header-nav">
+				<a href="#about">About</a>
+				<a href="#news">News</a>
+				<a href="#publications">Publications</a>
+				<a href="#experience">Experience</a>
+				<a href="assets/pdf/cv.pdf" target="_blank">CV</a>
 			</nav>
-		</header>
-
-		<!-- Main Title Block (Moved from Header) -->
-		<div class="main-title-block">
-			<h1>Ridwan Talukder</h1>
-			<!-- <span style="color: #666;">Graduate Research Assistant @ George Mason University</span> -->
-			<span><strong>PhD Student & Graduate Research Assistant</strong> — Robotics, Machine Learning, and Planning
-				under Uncertainty</span>
+			<!-- Mobile hamburger -->
+			<button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+				<i class="fa-solid fa-bars"></i>
+			</button>
 		</div>
+		<!-- Mobile nav dropdown -->
+		<nav class="mobile-nav" id="mobileNav">
+			<a href="#about">About</a>
+			<a href="#news">News</a>
+			<a href="#publications">Publications</a>
+			<a href="#experience">Experience</a>
+			<a href="assets/pdf/cv.pdf" target="_blank">CV</a>
+		</nav>
+	</header>
 
-		<!-- About / Bio Section -->
-		<section id="about">
-			<div class="bio-grid">
-				<div class="intro-text">
-					<p>
-						Hi, I am <strong>Md. Ridwan Hossain Talukder</strong>, and I go by <strong>Ridwan</strong>
-						professionally. I am a PhD Student and Graduate
-						Research Assistant in the
-						<a href="https://cs.gmu.edu/~gjstein/">Robotic Anticipatory Intelligence and Learning (RAIL)
-							Group</a> at <a href="https://www.gmu.edu/">George Mason University</a>,
-						advised by <a href="https://gjstein.com/">Prof. Gregory Stein</a>.
-					</p>
-					<p>
-						My research focuses on <strong>anticipatory task and motion planning for long-lived service
-							robots</strong>
-						operating in large-scale home environments. I develop learning-augmented planning methods that
-						enable
-						robots to reason about future tasks, proactively prepare their environment, and execute
-						long-horizon
-						behaviors efficiently under uncertainty.
-					</p>
-					<p>
-						Prior to my PhD, I worked as a Software Engineer and Founder in the tech industry. I hold an MS
-						in Computer Science from GMU (2024) and a BSc in Computer Engineering from the University of
-						Dhaka.
-					</p>
-					<p>
-						<i class="fa-solid fa-envelope"></i> &nbsp; <a
-							href="mailto:ridwan@example.com">mtalukd@gmu.edu</a>
-					</p>
-				</div>
-				<div class="profile-image-container">
-					<img src="images/headshot.png" alt="Ridwan Profile Picture" class="profile-pic" />
-				</div>
-			</div>
-		</section>
-
-		<!-- News Section -->
-		<section id="news">
-			<h2>News</h2>
-			<ul class="news-list">
-				<li>
-					<span class="date">Mar 2025</span>
-					<span>Our paper <strong><a href="https://arxiv.org/abs/2411.12837">"Anticipatory planning for
-								performant long-lived robot in large-scale
-								home-like
-								environments"</a></strong> accepted to
-						<strong>ICRA 2025</strong>!</span>
-				</li>
-				<li>
-					<span class="date">Aug 2024</span>
-					<span>Selected as a <strong>Pre-doctoral Fellow</strong> at the <a
-							href="https://idia.gmu.edu/">Institute of Digital Innovation (IDIA)</a>, George Mason
-						University.</span>
-				</li>
-				<li>
-					<span class="date">May 2024</span>
-					<span>Awarded <strong>Distinguished Academic Achievement</strong> by the Department of Computer
-						Science at George Mason University for outstanding performance in the M.S. in Computer Science
-						program.</span>
-				</li>
-				<li>
-					<span class="date">May 2023</span>
-					<span>Received the <strong>Outstanding Graduate Teaching Assistant Award</strong> from the
-						Department of Computer
-						Science, Volgenau School of Engineering, George Mason University, in recognition of excellence
-						in teaching and student support.</span>
-				</li>
-				<li>
-					<span class="date">Mar 2023</span>
-					<span>Our paper <strong><a href="https://arxiv.org/abs/2305.04692">"Anticipatory planning: Improving
-								long-lived planning by estimating expected
-								cost of future tasks"</a></strong> accepted to
-						<strong>ICRA 2023</strong>!</span>
-				</li>
-				<li>
-					<span class="date">Jan 2022</span>
-					<span>Joined the RAIL Group at GMU as a Graduate Research Assistant.</span>
-				</li>
-			</ul>
-		</section>
-
-		<!-- Publications Section -->
-		<section id="publications">
-			<h2>Selected Publications</h2>
-
-			<!-- Paper 1 -->
-			<div class="publication-item">
-				<img src="images/icra_logo.png" alt="ICRA" class="pub-logo">
-				<div class="pub-content">
-					<div class="pub-title">
-						<a href="https://arxiv.org/abs/2411.12837">Anticipatory planning for performant long-lived robot
-							in large-scale home-like environments</a>
-					</div>
-					<div class="pub-authors">
-						<strong>Md Ridwan Hossain Talukder</strong>, Raihan Islam Arnob, Gregory J Stein
-					</div>
-					<div class="pub-summary">
-						This research presents a model-based anticipatory task planning framework designed for
-						large-scale environments like homes and restaurants. By integrating Graph Neural Networks and 3D
-						Scene Graphs to estimate future costs, the system significantly improves long-term efficiency by
-						allowing robots to prepare for subsequent tasks.
-					</div>
-					<div class="pub-venue">
-						International Conference on Robotics and Automation (ICRA), 2025
-					</div>
-					<div class="pub-buttons">
-						<a href="https://arxiv.org/pdf/2411.12837" class="pub-btn">PDF</a>
-						<a href="https://arxiv.org/abs/2411.12837" class="pub-btn">ABS</a>
-						<a href="javascript:void(0)" onclick="toggleBibtex('bib-paper1')" class="pub-btn">BIB</a>
-					</div>
-					<div id="bib-paper1" class="bibtex-container"></div>
-				</div>
-			</div>
-
-			<!-- Paper 2 -->
-			<div class="publication-item">
-				<img src="images/icra_logo.png" alt="ICRA" class="pub-logo">
-				<div class="pub-content">
-					<div class="pub-title">
-						<a href="https://arxiv.org/abs/2305.04692">Anticipatory planning: Improving long-lived planning
-							by estimating expected cost of future tasks</a>
-					</div>
-					<div class="pub-authors">
-						Roshan Dhakal, <strong>Md Ridwan Hossain Talukder</strong>, Gregory J Stein
-					</div>
-					<div class="pub-summary">
-						This paper introduces an anticipatory planning method that leverages Graph Neural Networks to
-						predict the long-term impact of a robot's current actions on future tasks. Tested in a
-						blockworld setting, the approach promotes organizational behaviors that reduce overall execution
-						costs compared to traditional, myopic planning.
-					</div>
-					<div class="pub-venue">
-						International Conference on Robotics and Automation (ICRA), 2023
-					</div>
-					<div class="pub-buttons">
-						<a href="https://arxiv.org/pdf/2305.04692" class="pub-btn">PDF</a>
-						<a href="https://arxiv.org/abs/2305.04692" class="pub-btn">ABS</a>
-						<a href="javascript:void(0)" onclick="toggleBibtex('bib-paper2')" class="pub-btn">BIB</a>
-					</div>
-					<div id="bib-paper2" class="bibtex-container"></div>
-				</div>
-			</div>
-
-		</section>
-
-		<!-- Experience Section (New) -->
-		<section id="experience">
-			<h2>Experience</h2>
-			<ul class="news-list"> <!-- Reusing news-list style for simplicity -->
-				<li>
-					<span class="date">2022 - Present</span>
-					<span><strong>Graduate Research Assistant</strong>, George Mason University (RAIL Group)</span>
-				</li>
-				<li>
-					<span class="date">2021 - 2024</span>
-					<span><strong>Graduate Teaching Assistant</strong>, George Mason University</span>
-				</li>
-				<li>
-					<span class="date">2021 - 2022</span>
-					<span><strong>NSF Research Trainee</strong>, Center for Advancing Systems Science and Bioengineering
-						Innovation (CASSBI)</span>
-				</li>
-				<li>
-					<span class="date">2020 - 2021</span>
-					<span><strong>Founder</strong>, Khelo.io</span>
-				</li>
-				<li>
-					<span class="date">2018 - 2020</span>
-					<span><strong>Software Engineer</strong>, Workd</span>
-				</li>
-				<li>
-					<span class="date">2017 - 2018</span>
-					<span><strong>Software Engineer</strong>, IPVision Canada Inc.</span>
-				</li>
-			</ul>
-		</section>
-
-		<!-- Footer -->
-		<footer>
-			<div class="copyright">
-				&copy; 2025 Ridwan Talukder
-			</div>
-			<div class="social-icons">
-				<a href="https://scholar.google.com/" title="Google Scholar"><i
-						class="fa-solid fa-graduation-cap"></i></a>
-				<a href="https://github.com/ridwant" title="GitHub"><i class="fa-brands fa-github"></i></a>
-				<a href="https://x.com/Aakkhar" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-				<a href="https://linkedin.com/in/akkhar/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-			</div>
-		</footer>
-
+	<!-- ===== BANNER ===== -->
+	<div class="site-banner">
+		<div class="banner-blur" style="background-image: url('images/banner.png');"></div>
+		<img src="images/banner.png" alt="Robotics research banner" class="banner-img" />
 	</div>
 
-	<!-- JavaScript for Toggle -->
-	<!-- JavaScript for Toggle -->
+	<!-- ===== MAIN LAYOUT ===== -->
+	<div class="page-wrapper">
+		<main class="main-layout">
+
+			<!-- LEFT SIDEBAR -->
+			<aside class="sidebar">
+				<div class="sidebar-photo-frame">
+					<img src="images/headshot.png" alt="Ridwan Talukder" class="sidebar-photo" />
+				</div>
+
+				<div class="sidebar-name">Ridwan Talukder</div>
+				<div class="sidebar-title">PhD Student &amp; Graduate Research Assistant</div>
+
+				<hr class="sidebar-divider">
+
+				<div class="sidebar-affil">
+					<p>RAIL Group, Dept. of Computer Science</p>
+					<p>George Mason University</p>
+				</div>
+
+				<hr class="sidebar-divider">
+
+				<ul class="sidebar-links">
+					<li>
+						<span class="sidebar-link-icon"><i class="fa-solid fa-envelope"></i></span>
+						<a href="mailto:mtalukd@gmu.edu">mtalukd@gmu.edu</a>
+					</li>
+					<li>
+						<span class="sidebar-link-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+						<a href="https://scholar.google.com/citations?user=iDFSaL4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+					</li>
+					<li>
+						<span class="sidebar-link-icon"><i class="fa-brands fa-github"></i></span>
+						<a href="https://github.com/ridwant" target="_blank" rel="noopener">GitHub</a>
+					</li>
+					<li>
+						<span class="sidebar-link-icon"><i class="fa-brands fa-x-twitter"></i></span>
+						<a href="https://x.com/Aakkhar" target="_blank" rel="noopener">Twitter / X</a>
+					</li>
+					<li>
+						<span class="sidebar-link-icon"><i class="fa-brands fa-linkedin"></i></span>
+						<a href="https://linkedin.com/in/akkhar/" target="_blank" rel="noopener">LinkedIn</a>
+					</li>
+				</ul>
+
+				<hr class="sidebar-divider">
+			</aside>
+
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+
+				<!-- About Section -->
+				<section id="about">
+					<div class="content-title">
+						<h1>About me</h1>
+						<p class="subtitle">Robotics researcher developing anticipatory planning methods for long-lived autonomous robots.</p>
+					</div>
+
+					<div class="content-body">
+						<p>
+							Hi, I am <strong>Md. Ridwan Hossain Talukder</strong>, and I go by <strong>Ridwan</strong>
+							professionally. I am a PhD Student and Graduate Research Assistant in the
+							<a href="https://cs.gmu.edu/~gjstein/" target="_blank" rel="noopener">Robotic Anticipatory Intelligence and Learning (RAIL) Group</a>
+							at <a href="https://www.gmu.edu/" target="_blank" rel="noopener">George Mason University</a>,
+							advised by <a href="https://gjstein.com/" target="_blank" rel="noopener">Prof. Gregory Stein</a>.
+						</p>
+						<p>
+							My research focuses on <strong>anticipatory task and motion planning for long-lived service
+								robots</strong> operating in large-scale home environments. I develop learning-augmented
+							planning methods that enable robots to reason about future tasks, proactively prepare their
+							environment, and execute long-horizon behaviors efficiently under uncertainty.
+						</p>
+						<p>
+							Prior to my PhD, I worked as a Software Engineer and Founder in the tech industry. I hold an
+							MS in Computer Science from GMU (2024) and a BSc in Computer Engineering from the University
+							of Dhaka.
+						</p>
+						<p>
+							Additional information about my work can be found in the
+							<a href="#publications">publications</a> and <a href="#experience">experience</a> sections
+							below. For inquiries or potential collaborations, feel free to reach out at
+							<a href="mailto:mtalukd@gmu.edu">mtalukd@gmu.edu</a>.
+						</p>
+					</div>
+				</section>
+
+				<!-- News Section -->
+				<section id="news">
+					<h2 class="section-heading">News</h2>
+					<ul class="news-list">
+						<li>
+							<span class="date">Mar 2025</span>
+							<span>Our paper <strong><a href="https://arxiv.org/abs/2411.12837" target="_blank" rel="noopener">"Anticipatory planning for performant long-lived robot in large-scale home-like environments"</a></strong> accepted to <strong>ICRA 2025</strong>!</span>
+						</li>
+						<li>
+							<span class="date">Aug 2024</span>
+							<span>Selected as a <strong>Pre-doctoral Fellow</strong> at the <a href="https://idia.gmu.edu/" target="_blank" rel="noopener">Institute of Digital Innovation (IDIA)</a>, George Mason University.</span>
+						</li>
+						<li>
+							<span class="date">May 2024</span>
+							<span>Awarded <strong>Distinguished Academic Achievement</strong> by the Department of Computer Science at George Mason University for outstanding performance in the M.S. in Computer Science program.</span>
+						</li>
+						<li>
+							<span class="date">May 2023</span>
+							<span>Received the <strong>Outstanding Graduate Teaching Assistant Award</strong> from the Department of Computer Science, Volgenau School of Engineering, George Mason University, in recognition of excellence in teaching and student support.</span>
+						</li>
+						<li>
+							<span class="date">Mar 2023</span>
+							<span>Our paper <strong><a href="https://arxiv.org/abs/2305.04692" target="_blank" rel="noopener">"Anticipatory planning: Improving long-lived planning by estimating expected cost of future tasks"</a></strong> accepted to <strong>ICRA 2023</strong>!</span>
+						</li>
+						<li>
+							<span class="date">Jan 2022</span>
+							<span>Joined the RAIL Group at GMU as a Graduate Research Assistant.</span>
+						</li>
+					</ul>
+				</section>
+
+				<!-- Publications Section -->
+				<section id="publications">
+					<h2 class="section-heading">Selected Publications</h2>
+
+					<!-- Paper 1 -->
+					<div class="publication-item">
+						<img src="images/icra_logo.png" alt="ICRA 2025" class="pub-logo">
+						<div class="pub-content">
+							<div class="pub-title">
+								<a href="https://arxiv.org/abs/2411.12837" target="_blank" rel="noopener">Anticipatory planning for performant long-lived robot in large-scale home-like environments</a>
+							</div>
+							<div class="pub-authors">
+								<strong>Md Ridwan Hossain Talukder</strong>, Raihan Islam Arnob, Gregory J Stein
+							</div>
+							<div class="pub-summary">
+								This research presents a model-based anticipatory task planning framework designed for large-scale environments like homes and restaurants. By integrating Graph Neural Networks and 3D Scene Graphs to estimate future costs, the system significantly improves long-term efficiency by allowing robots to prepare for subsequent tasks.
+							</div>
+							<div class="pub-venue">
+								International Conference on Robotics and Automation (ICRA), 2025
+							</div>
+							<div class="pub-buttons">
+								<a href="https://arxiv.org/pdf/2411.12837" class="pub-btn" target="_blank" rel="noopener">PDF</a>
+								<a href="https://arxiv.org/abs/2411.12837" class="pub-btn" target="_blank" rel="noopener">ABS</a>
+								<a href="javascript:void(0)" onclick="toggleBibtex('bib-paper1')" class="pub-btn">BIB</a>
+							</div>
+							<div id="bib-paper1" class="bibtex-container"></div>
+						</div>
+					</div>
+
+					<!-- Paper 2 -->
+					<div class="publication-item">
+						<img src="images/icra_logo.png" alt="ICRA 2023" class="pub-logo">
+						<div class="pub-content">
+							<div class="pub-title">
+								<a href="https://arxiv.org/abs/2305.04692" target="_blank" rel="noopener">Anticipatory planning: Improving long-lived planning by estimating expected cost of future tasks</a>
+							</div>
+							<div class="pub-authors">
+								Roshan Dhakal, <strong>Md Ridwan Hossain Talukder</strong>, Gregory J Stein
+							</div>
+							<div class="pub-summary">
+								This paper introduces an anticipatory planning method that leverages Graph Neural Networks to predict the long-term impact of a robot's current actions on future tasks. Tested in a blockworld setting, the approach promotes organizational behaviors that reduce overall execution costs compared to traditional, myopic planning.
+							</div>
+							<div class="pub-venue">
+								International Conference on Robotics and Automation (ICRA), 2023
+							</div>
+							<div class="pub-buttons">
+								<a href="https://arxiv.org/pdf/2305.04692" class="pub-btn" target="_blank" rel="noopener">PDF</a>
+								<a href="https://arxiv.org/abs/2305.04692" class="pub-btn" target="_blank" rel="noopener">ABS</a>
+								<a href="javascript:void(0)" onclick="toggleBibtex('bib-paper2')" class="pub-btn">BIB</a>
+							</div>
+							<div id="bib-paper2" class="bibtex-container"></div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- Experience Section -->
+				<section id="experience">
+					<h2 class="section-heading">Experience</h2>
+					<ul class="news-list">
+						<li>
+							<span class="date">2022 &ndash; Present</span>
+							<span><strong>Graduate Research Assistant</strong>, George Mason University (RAIL Group)</span>
+						</li>
+						<li>
+							<span class="date">2021 &ndash; 2024</span>
+							<span><strong>Graduate Teaching Assistant</strong>, George Mason University</span>
+						</li>
+						<li>
+							<span class="date">2021 &ndash; 2022</span>
+							<span><strong>NSF Research Trainee</strong>, Center for Advancing Systems Science and Bioengineering Innovation (CASSBI)</span>
+						</li>
+						<li>
+							<span class="date">2020 &ndash; 2021</span>
+							<span><strong>Founder</strong>, Khelo.io</span>
+						</li>
+						<li>
+							<span class="date">2018 &ndash; 2020</span>
+							<span><strong>Software Engineer</strong>, Workd</span>
+						</li>
+						<li>
+							<span class="date">2017 &ndash; 2018</span>
+							<span><strong>Software Engineer</strong>, IPVision Canada Inc.</span>
+						</li>
+					</ul>
+				</section>
+
+			</div><!-- /.main-content -->
+		</main><!-- /.main-layout -->
+	</div><!-- /.page-wrapper -->
+
+	<!-- ===== FOOTER ===== -->
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<span>&copy; 2025 Ridwan Talukder</span>
+			<span class="footer-sep">&nbsp;&middot;&nbsp;</span>
+			<span class="footer-links">
+				<a href="mailto:mtalukd@gmu.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+				<a href="https://scholar.google.com/citations?user=iDFSaL4AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+				<a href="https://github.com/ridwant" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+				<a href="https://x.com/Aakkhar" target="_blank" rel="noopener" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="https://linkedin.com/in/akkhar/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			</span>
+		</div>
+	</footer>
+
+	<!-- JavaScript -->
 	<script>
+		// BibTeX data
 		const bibtexData = {
 			'bib-paper1': `@inproceedings{talukd2025anticipatory,
   title={Anticipatory planning for performant long-lived robot in large-scale home-like environments},
@@ -273,14 +305,39 @@
 			if (x.innerHTML.trim() === "") {
 				x.innerText = bibtexData[id];
 			}
-			if (x.style.display === "none" || x.style.display === "") {
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
+			x.style.display = (x.style.display === "none" || x.style.display === "") ? "block" : "none";
 		}
+
+		// Mobile nav toggle
+		document.getElementById('navToggle').addEventListener('click', function () {
+			document.getElementById('mobileNav').classList.toggle('open');
+		});
+		document.querySelectorAll('.mobile-nav a').forEach(function (link) {
+			link.addEventListener('click', function () {
+				document.getElementById('mobileNav').classList.remove('open');
+			});
+		});
+
+		// Active nav link highlight on scroll
+		const sections = document.querySelectorAll('section[id]');
+		const navLinks = document.querySelectorAll('.header-nav a, .mobile-nav a');
+
+		function updateActiveNav() {
+			let scrollY = window.scrollY + 100;
+			sections.forEach(function (section) {
+				if (scrollY >= section.offsetTop && scrollY < section.offsetTop + section.offsetHeight) {
+					navLinks.forEach(function (link) {
+						link.classList.remove('active');
+						if (link.getAttribute('href') === '#' + section.id) {
+							link.classList.add('active');
+						}
+					});
+				}
+			});
+		}
+		window.addEventListener('scroll', updateActiveNav);
+		updateActiveNav();
 	</script>
 
 </body>
-
 </html>
